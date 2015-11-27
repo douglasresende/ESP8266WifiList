@@ -2,8 +2,7 @@
 ESP8266 library to show layout with list, connect and memorize WiFi.
 
 # License
-
-Copyright (c) 2015, Douglas
+**ISC License (ISC)** Copyright (c) 2015, Douglas R. Camargo
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
