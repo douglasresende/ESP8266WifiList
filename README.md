@@ -3,7 +3,9 @@ ESP8266 library to show layout with list, connect and memorize WiFi.
 
 # TODO List:
 [ ] Test with travis-ci
+
 [ ] Add option to choose I18n
+
 [ ] Refactory to a small code
 
 # License

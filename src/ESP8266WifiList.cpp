@@ -58,9 +58,9 @@ String ESP8266WifiList::tableCss()
  css += "  padding: 8px;";
  css += "  border-top:1px solid #fafafa;";
  css += "  border-bottom:1px solid #e0e0e0;";
- css += "  background: #ededed;";
- css += "  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));";
- css += "  background: -moz-linear-gradient(top,  #ededed,  #ebebeb);";
+ css += "  background: #dff0FF;";
+ css += "  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dff0FF));";
+ css += "  background: -moz-linear-gradient(top,  #ffffff,  #dff0FF);";
  css += "}";
  css += "table th:first-child{";
  css += "  text-align: left;";
@@ -264,7 +264,7 @@ String ESP8266WifiList::baseJs()
   js += "    if(colors){ tr.className = 'even'; }";
   js += "    colors = !colors;";
   js += "    item  = '';";
-  js += "    item += '<td>'+el.ssid+'</td><td>'+(parseInt(el.rssi)+100)+'%</td>';";
+  js += "    item += '<td>'+el.ssid+'</td>';";
   js += "    item += '<td>'+(parseInt(el.rssi)+100)+'%</td>';";
   js += "    item += '<td>'+el.need_password+'</td>';";
   js += "    item += '<td><button onclick=\"showModal(\\''+el.ssid+'\\')\" class=\"btn\">Conectar</button></td>';";
@@ -364,8 +364,8 @@ String ESP8266WifiList::pageRootHtml()
   html += "    <div>";
   html += "      <table class='wifi_form'>";
   html += "        <thead>";
-  html += "          <tr colspan='2'>";
-  html += "            <th>Connect?</th>";
+  html += "          <tr>";
+  html += "            <th colspan='2'>Please enter password:</th>";
   html += "          </tr>";
   html += "        </thead>";
   html += "        <tr>";
